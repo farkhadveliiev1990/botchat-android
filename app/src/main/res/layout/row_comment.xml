@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNew"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.15"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@drawable/circle_gradient">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="1.5dp"
+                android:src="@drawable/img1"
+                app:civ_border_width="2.5dp"
+                android:layout_marginEnd="0.5dp"
+                app:civ_border_color="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_background"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:maxLines="15"
+                android:text="content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="18:50 08/08/2019"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
